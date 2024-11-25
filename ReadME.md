@@ -3,7 +3,7 @@
 ***Algorytm zachłanny*** - algorytm który w każdym kolejnym kroku dokonuje wyboru lokalnie optymalnego. Rozwiązanie zachłanne zawsze wybiera najlepszą z dostępnych opcji nie sprawdzając dalszych możliwości, co czasem powoduje uzyskanie rozwiązania nieoptymalnego globalnie
 ## Zasada działania algorytmu zachłannego
 Algorytm zachłanny zawsze wybiera najlepszą lokalnie możliwą opcję, można to łatwo zaprezentować na przykładzie piramidy
-![](https://cdn.discordapp.com/attachments/1047076190063697940/1310674267008143480/1004.p1.png?ex=67461408&is=6744c288&hm=16ff1b4f54bb0ea1b17110f1693cc78062400b183d5728dbf971ec71ec52c2e6&)
+![](https://cdn.discordapp.com/attachments/1047076190063697940/1310674267008143480/1004.p1.png?ex=67461408&is=6744c288&hm=16ff1b4f54bb0ea1b17110f1693cc78062400b183d5728dbf971ec71ec52c2e6&)  
 Algorytm zaczyna na samym szczycie piramidy wybierając jedno z pól znajdujących się bezpośrednio pod nim. Nasz algorytm otrzymał za zadanie znaleźć największą sumę wartości w poniższych polach. Zasada działania algorytmu wygląda tak:
 ```mermaid
 graph TD
@@ -16,20 +16,19 @@ F-->G
 G-->A
 ```
 ***
-***Zad1.1***
+***Zad1.1***  
 Podaj sumę którą obliczy nasz algorytm.
 ***
-![](https://cdn.discordapp.com/attachments/1047076190063697940/1310674468229615658/1004.p6-removebg-preview.png?ex=67461438&is=6744c2b8&hm=700a1364a0eb5a7056577ca54e3e803c267be945678d300850dfefee199b2ef4&)
-Suma wynosi ==19==
+![](https://cdn.discordapp.com/attachments/1047076190063697940/1310674468229615658/1004.p6-removebg-preview.png?ex=67461438&is=6744c2b8&hm=700a1364a0eb5a7056577ca54e3e803c267be945678d300850dfefee199b2ef4&)  
+Suma wynosi 19
 ***
-***Zad1.2***
+***Zad1.2***  
 Czy otrzymana suma jest największą możliwą wartością?
 ***
 ### Probem naszego rozwiązania
-W przedstawionym roziązaniu problemu wykorzystano algorytm zachłanny, który wybierając rozwiązania optymalne lokalnie, nie uzyskał rozwiązania optymalnego globalnie
-**Rozwiązanie zachłanne daje nam wynik ==19== kiedy rozwiązaniem optymalnym jest wynik ==26==**
-
-![](https://cdn.discordapp.com/attachments/1047076190063697940/1310677103683043328/1004.p7.png?ex=674616ac&is=6744c52c&hm=4ac9b489b79b350f2bc4ec244ce77dd57cbb19d0fe93d531f2de6128f57a269c&)
+W przedstawionym roziązaniu problemu wykorzystano algorytm zachłanny, który wybierając rozwiązania optymalne lokalnie, nie uzyskał rozwiązania optymalnego globalnie  
+![](https://cdn.discordapp.com/attachments/1047076190063697940/1310677103683043328/1004.p7.png?ex=674616ac&is=6744c52c&hm=4ac9b489b79b350f2bc4ec244ce77dd57cbb19d0fe93d531f2de6128f57a269c&)  
+**Rozwiązanie zachłanne daje nam wynik *19* kiedy rozwiązaniem optymalnym jest wynik *26***
 
 ## Problem wydawania reszty
 Problem wydawania reszty jest ciekawym zastosowaniem algorytmu zachłannego, ponieważ to, czy otrzymamy rozwiązanie optymalne globalnie zależy od otrzymanego zestawu nominałów. Aby nasz przykład był prosty i dawał nam optymalne rozwiązania przyjmijmy że nominały którymi dysponujemy to 1$ 2$ i 5$.
@@ -49,7 +48,7 @@ F-->E
 
 ```
  ***
-***Zadanie 2.1***
+***Zadanie 2.1***  
 Mamy do wydania resztę 13 $, jaka jest najmniejsza liczba monet które należy użyć, aby wydać tą resztę?
 ***
 ### Przykładowa implementacja rozwiązania
@@ -87,22 +86,22 @@ if __name__ == '__main__':
     change()
 ```
 ***
-***Zad2.2***
+***Zad2.2***  
 Sprawdź co się stanie po wprowadzeniu wartości:
 Reszta=30
 Nominały=21,10,1
 Czy powstałe rozwiązanie jest rozwiązaniem optymalnym?
 ***
-***Zad2.3***
+***Zad2.3***  
 Dodaj możliwość wyświetlenia jakie nominały zostały użyte do wydania reszty
 ***
-***Zad2.4***
+***Zad2.4***  
 Jeżeli nasz algorytm nie jest w stanie wydać reszty z powodu niedostępnych nominałów otrzymujemy błąd, dodaj proste zabezpieczenie w przypadku gdy wydanie reszty jest niemożliwe
 ***
 ## Inne przykładowe zastosowania algorytmów zachłannych
 
-- optymalizacja zasobów (np. problem plecakowy)
--   nawigacja i znajdowanie najkrótszej ścieżki (np. algorytm Dijkstry)
--   kompresja danych (np. kodowanie Huffmana)
--   harmonogramowanie zadań (np. problem najwcześniejszego terminu)
+- optymalizacja zasobów (np. problem plecakowy)  
+-   nawigacja i znajdowanie najkrótszej ścieżki (np. algorytm Dijkstry)  
+-   kompresja danych (np. kodowanie Huffmana)  
+-   harmonogramowanie zadań (np. problem najwcześniejszego terminu)  
 
