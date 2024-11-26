@@ -1,5 +1,4 @@
 def change():
-
     # User input
     try:
         Change = int(input("Enter change: "))
@@ -9,6 +8,7 @@ def change():
             Coins.append(int(input(f"Value of coin {a + 1}: ")))
     except:
         print("Something went wrong, make sure you used correct values and try again")
+        input("press enter to exit")  # used so console doesn't close instantly
         exit(1)
 
     Coins.sort(reverse=True) #making sure we got our values in correct order to avoid issues
@@ -18,6 +18,7 @@ def change():
 
     if(Coins[0]>Change):
         print("Coins values are greater than change, giving change is impossible")
+        input("press enter to exit")  # used so console doesn't close instantly
         exit(1)
     while Change > 0: #counting coins
         while Change >= Coins[i]:
