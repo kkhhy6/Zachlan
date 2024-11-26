@@ -2,7 +2,7 @@
 ## Definicja
 ***Algorytm zachłanny*** - algorytm który w każdym kolejnym kroku dokonuje wyboru lokalnie optymalnego. Rozwiązanie zachłanne zawsze wybiera najlepszą z dostępnych opcji nie sprawdzając dalszych możliwości, co czasem powoduje uzyskanie rozwiązania nieoptymalnego globalnie
 ## Zasada działania algorytmu zachłannego
-Algorytm zachłanny zawsze wybiera najlepszą lokalnie możliwą opcję, można to łatwo zaprezentować na przykładzie piramidy
+Algorytm zachłanny zawsze wybiera najlepszą lokalnie możliwą opcję, można to łatwo zaprezentować na przykładzie piramidy  
 ![](https://cdn.discordapp.com/attachments/1047076190063697940/1310674267008143480/1004.p1.png?ex=67461408&is=6744c288&hm=16ff1b4f54bb0ea1b17110f1693cc78062400b183d5728dbf971ec71ec52c2e6&)  
 Algorytm zaczyna na samym szczycie piramidy wybierając jedno z pól znajdujących się bezpośrednio pod nim. Nasz algorytm otrzymał za zadanie znaleźć największą sumę wartości w poniższych polach. Zasada działania algorytmu wygląda tak:
 ```mermaid
